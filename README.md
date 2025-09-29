@@ -11,8 +11,31 @@
 
 ## :fire: Updates
 
-- [x] **2025/??/??**: 🎉🎉🎉Our models and code are being prepared for open source release.
+- [x] **2025/09/29**: 🎉🎉🎉Our models and code have been released as open source.
+- [x] **2025/09/19**: 🎉🎉🎉Our paper has been accepted as Spotlight in the proceedings of NeurIPS 2025.
 
+---
+## Introduction
+
+![introduction](demo/img/introduction.png)
+
+StreamForest is a novel architecture designed for real-time streaming video understanding with Multimodal Large Language Models (MLLMs). Unlike prior approaches that struggle with memory constraints or coarse spatiotemporal reasoning, StreamForest introduces two complementary innovations:
+
+![Architecture of StreamForest](demo/img/architecture.png)
+
+- Persistent Event Memory Forest (PEMF): A hierarchical, event-level memory system that adaptively organizes and compresses long-term video history using temporal distance, content similarity, and merge frequency. This ensures efficient storage without losing critical contextual information.
+
+- Fine-grained Spatiotemporal Window (FSTW): A short-term perception module that captures detailed local spatiotemporal features around the current moment, enabling precise real-time reasoning.
+
+![ODVBench](demo/img/benchmark.png)
+
+For effective deployment and comprehensive evaluation, we contribute:
+
+- OnlineIT, an instruction-tuning dataset tailored for streaming scenarios, improving both present-moment perception and future prediction.
+
+- ODV-Bench, a benchmark for real-time autonomous driving video understanding.
+
+Extensive experiments demonstrate that StreamForest consistently outperforms previous state-of-the-art streaming video MLLMs and achieves performance comparable to leading offline models. Even under extreme visual token compression, the model preserves nearly all of its accuracy, highlighting its robustness, efficiency, and scalability for real-world streaming video applications.
 
 
 ---
@@ -23,7 +46,7 @@
 - Please execute the following commands to clone the StreamForest source code to your local environment:
 
 ```
-git clone https://github.com/LanXingXuan/StreamForest_before_opensource.git
+git clone https://github.com/MCG-NJU/StreamForest.git
 cd StreamForest
 ```
 
@@ -56,7 +79,7 @@ We employ lmms-eval for model evaluation.
 - You can run the following command to evaluate StreamForest on eight benchmark datasets, including our proposed ODVBench:
 
 ```
-bash scripts/eval/eval_all.sh
+bash scripts/eval/run_eval.sh
 ```
 
 #### Evaluating Other Models
@@ -87,7 +110,7 @@ bash scripts/eval/eval_all.sh
 
 #### Training Procedure
 
-Our training pipeline consists of four stages. The first three stages follow the setup of VideoChat-Flash, while the fourth stage involves online video understanding fine-tuning.
+Our training pipeline consists of five stages. The first three stages follow the setup of VideoChat-Flash, while the fourth and fifth stages involves online video fine-tuning.
 
 - To execute the first three stages of offline video pretraining, run
 ```
