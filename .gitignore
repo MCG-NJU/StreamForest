@@ -18,6 +18,7 @@ dist
 .vscode
 .ipynb_checkpoints
 
+anno
 ckpt
 tools
 annotations

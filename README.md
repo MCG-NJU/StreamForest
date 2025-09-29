@@ -6,12 +6,16 @@
 
 </div>
 
+<p align="center">
+        🤗 <a href="https://huggingface.co/collections/MCG-NJU/streamforest-and-odvbench-68da5d8a88f3cf453bca0e09">Model & Data</a> &nbsp&nbsp ｜ &nbsp&nbsp🖥️ <a href="">Demo</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="">Paper</a> &nbsp&nbsp | &nbsp&nbsp 🌐 <a href="">Blog</a>
+<br>
 
+</p>
 
 
 ## :fire: Updates
 
-- [x] **2025/09/29**: 🎉🎉🎉Our models and code have been released as open source.
+- [x] **2025/09/29**: 🎉🎉🎉Our models, data and code have been released.
 - [x] **2025/09/19**: 🎉🎉🎉Our paper has been accepted as Spotlight in the proceedings of NeurIPS 2025.
 
 ---
