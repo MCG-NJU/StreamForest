@@ -1,0 +1,8 @@
+include: _default_template.yaml
+task: mlvu_mc_ego
+dataset_name: 3_ego
+test_split: train
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: 3_ego
+    post_prompt: "Answer with the option's letter from the given choices directly."

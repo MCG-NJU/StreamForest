@@ -1,0 +1,8 @@
+include: _default_template.yaml
+task: mlvu_mc_plotqa
+dataset_name: 1_plotQA
+test_split: train
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: 1_plotQA
+    post_prompt: "Answer with the option's letter from the given choices directly."

@@ -1,0 +1,8 @@
+include: _default_template.yaml
+task: ovobench_backward_tracking
+dataset_name: backward_tracking
+test_split: train
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: backward_tracking
+    post_prompt: "Answer with the option's letter from the given choices directly."

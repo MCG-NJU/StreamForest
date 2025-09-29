@@ -1,0 +1,9 @@
+group: ovobench
+task:
+  - ovobench_real_time_visual_perception
+  - ovobench_backward_tracking
+  - ovobench_forward_active_responding
+
+
+
+# ['action_sequence', 'moving_count', 'action_prediction', 'episodic_reasoning', 'action_antonym', 'action_count', 'scene_transition', 'object_shuffle', 'object_existence', 'fine_grained_pose', 'unexpected_action', 'moving_direction', 'state_change', 'object_interaction', 'character_order', 'action_localization', 'counterfactual_inference', 'fine_grained_action', 'moving_attribute', 'egocentric_navigation']

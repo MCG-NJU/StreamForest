@@ -1,0 +1,8 @@
+include: _default_template.yaml
+task: mlvu_mc_anomaly_reco
+dataset_name: 6_anomaly_reco
+test_split: train
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: 6_anomaly_reco
+    post_prompt: "Answer with the option's letter from the given choices directly."

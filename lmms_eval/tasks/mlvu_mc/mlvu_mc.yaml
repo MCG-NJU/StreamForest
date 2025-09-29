@@ -1,0 +1,10 @@
+group: mlvu_mc
+task:
+  - mlvu_mc_count
+  - mlvu_mc_ego
+  - mlvu_mc_needle
+  - mlvu_mc_order
+  - mlvu_mc_plotqa
+  - mlvu_mc_anomaly_reco
+  - mlvu_mc_topic_reasoning
+

@@ -1,0 +1,8 @@
+include: _default_template.yaml
+task: odvbench_targeting_single_dynamic_objects_v4
+dataset_name: targeting_single_dynamic_objects_v4
+test_split: train
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: targeting_single_dynamic_objects_v4
+    post_prompt: "Answer with the option's letter from the given choices directly."

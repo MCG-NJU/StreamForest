@@ -1,0 +1,8 @@
+include: _default_template.yaml
+task: mlvu_mc_topic_reasoning
+dataset_name: 7_topic_reasoning
+test_split: train
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: 7_topic_reasoning
+    post_prompt: "Answer with the option's letter from the given choices directly."

@@ -1,0 +1,8 @@
+include: _default_template.yaml
+task: ovbench_ava
+dataset_name: ava
+test_split: train
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: ava
+    post_prompt: "Answer with the option's letter from the given choices directly."

@@ -1,0 +1,9 @@
+group: odvbench
+task:
+  - odvbench_targeting_single_static_objects_v4
+  - odvbench_targeting_multi_object_interaction_scenarios_or_events_v4
+  - odvbench_targeting_single_dynamic_objects_v4
+
+
+
+# ['action_sequence', 'moving_count', 'action_prediction', 'episodic_reasoning', 'action_antonym', 'action_count', 'scene_transition', 'object_shuffle', 'object_existence', 'fine_grained_pose', 'unexpected_action', 'moving_direction', 'state_change', 'object_interaction', 'character_order', 'action_localization', 'counterfactual_inference', 'fine_grained_action', 'moving_attribute', 'egocentric_navigation']

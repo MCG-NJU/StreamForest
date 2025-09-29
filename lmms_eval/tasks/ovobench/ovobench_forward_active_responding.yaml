@@ -1,0 +1,8 @@
+include: _default_template.yaml
+task: ovobench_forward_active_responding
+dataset_name: forward_active_responding
+test_split: train
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: forward_active_responding
+    post_prompt: "Answer with the option's letter from the given choices directly."
