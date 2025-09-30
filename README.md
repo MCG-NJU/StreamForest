@@ -114,7 +114,7 @@ bash scripts/eval/run_eval.sh
 
 #### Training Procedure
 
-Our training pipeline consists of five stages. The first three stages follow the setup of VideoChat-Flash, while the fourth and fifth stages involves online video fine-tuning.
+Our training pipeline consists of five stages. The first three stages follow the setup of [VideoChat-Flash](https://github.com/OpenGVLab/VideoChat-Flash), while the fourth and fifth stages involves online video fine-tuning.
 
 - To execute the first three stages of offline video pretraining, run
 ```
