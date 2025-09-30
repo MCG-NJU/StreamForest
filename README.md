@@ -129,3 +129,32 @@ bash scripts/train/stage3-video_sft/s3_siglip_tome16_mlp.sh
 bash scripts/train/stage4-online_ft/s4_siglip_online_dynamic_tree_memory.sh
 bash scripts/train/stage5-drive_ft/s5_siglip_online_tree_memory_drive.sh
 ```
+
+
+
+---
+
+## :page_facing_up: Citation
+
+```BibTeX
+@misc{zeng2025streamforest,
+      title={StreamForest: Efficient Online Video Understanding with Persistent Event Memory}, 
+      author={Xiangyu Zeng and Kefan Qiu and Qingyu Zhang and Xinhao Li and Jing Wang and Jiaxin Li and Ziang Yan and Kun Tian and Meng Tian and Xinhai Zhao and Yi Wang and Limin Wang},
+      year={2025},
+      eprint={2509.24871},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2509.24871}, 
+}
+```
+
+---
+
+## :dizzy: Acknowledgement
+
+Thanks to the open source of the following projects:
+- [VideoChat-Flash](https://github.com/OpenGVLab/VideoChat-Flash): Efficient architecture, data and training methods for offline video understanding.
+- [LLaVA-NeXT](https://github.com/LLaVA-VL/LLaVA-NeXT): Original code framework and image and video training data.
+- [ToMe](https://github.com/facebookresearch/ToMe): Efficient token merging and compression method.
+- [VideoChat-Online](https://github.com/MCG-NJU/VideoChat-Online): Inspiring memory mechanism design and online training data.
+- [StreamChat](https://github.com/hmxiong/StreamChat): Design of a training-free tree-structured hierarchical memory mechanism.
