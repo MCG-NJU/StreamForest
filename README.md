@@ -19,7 +19,7 @@
 - [x] **2025/09/19**: 🎉🎉🎉Our paper has been accepted as Spotlight in the proceedings of NeurIPS 2025.
 
 ---
-## Introduction
+## :parrot: Introduction
 
 ![introduction](demo/img/introduction.png)
 
@@ -45,7 +45,7 @@ Extensive experiments demonstrate that StreamForest consistently outperforms pre
 ---
 
 
-## Installation
+## ⚙️ Installation
 
 - Please execute the following commands to clone the StreamForest source code to your local environment:
 
@@ -69,7 +69,7 @@ pip install -r requirements.txt
 
 ---
 
-## Evaluation
+## 📊 Evaluation
 
 We employ lmms-eval for model evaluation.
 
@@ -102,7 +102,7 @@ bash scripts/eval/run_eval.sh
 
 ---
 
-## Training
+## ⚡ Training
 
 #### Data Preparation
 
