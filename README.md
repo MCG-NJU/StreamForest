@@ -158,3 +158,5 @@ Thanks to the open source of the following projects:
 - [ToMe](https://github.com/facebookresearch/ToMe): Efficient token merging and compression method.
 - [VideoChat-Online](https://github.com/MCG-NJU/VideoChat-Online): Inspiring memory mechanism design and online training data.
 - [StreamChat](https://github.com/hmxiong/StreamChat): Design of a training-free tree-structured hierarchical memory mechanism.
+- [MovieChat](https://github.com/rese1f/MovieChat): Pioneer of long video memory mechanisms.
+- [VideoLLM-Online](https://github.com/showlab/videollm-online): Pioneer of online video understanding methods.
