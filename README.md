@@ -7,7 +7,7 @@
 </div>
 
 <p align="center">
-        🤗 <a href="https://huggingface.co/collections/MCG-NJU/streamforest-and-odvbench-68da5d8a88f3cf453bca0e09">Model & Data</a> &nbsp&nbsp ｜ &nbsp&nbsp🖥️ <a href="">Demo</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="">Paper</a> &nbsp&nbsp | &nbsp&nbsp 🌐 <a href="">Blog</a>
+        🤗 <a href="https://huggingface.co/collections/MCG-NJU/streamforest-and-odvbench-68da5d8a88f3cf453bca0e09">Model & Data</a> &nbsp&nbsp ｜ &nbsp&nbsp🖥️ <a href="">Demo</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/pdf/2509.24871">Paper</a> &nbsp&nbsp | &nbsp&nbsp 🌐 <a href="">Blog</a>
 <br>
 
 </p>
@@ -106,7 +106,7 @@ bash scripts/eval/run_eval.sh
 
 #### Data Preparation
 
-- OnlineIT-general: Download the dataset from <OnlineIT_URL_HERE> and place it under the `./anno` directory.
+- OnlineIT-general: Download the dataset from [StreamForest-Annodata](https://huggingface.co/datasets/Lanxingxuan/StreamForest-Annodata) and place it under the `./anno` directory.
 
 - Video & Image Data: Download annotations from [VideoChat-Flash-Training-Data](https://huggingface.co/datasets/OpenGVLab/VideoChat-Flash-Training-Data/tree/main/annotations) and store them in the `./annotations` directory.
 
