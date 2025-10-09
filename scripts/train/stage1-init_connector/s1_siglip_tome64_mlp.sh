@@ -9,8 +9,8 @@ export NCCL_SOCKET_IFNAME=bond0
 export NCCL_IB_HCA=mlx5_0,mlx5_2
 # export NCCL_DEBUG="INFO"
 
-############### Pretrain ################
-DATA_VERSION="anno/data_list/stage1_init_connector_iv1m.yaml"
+############### Offline PT ################
+DATA_VERSION="anno/data_list/stage1_init_connector_iv1m.yaml"       #Download from https://huggingface.co/datasets/MCG-NJU/StreamForest-Annodata/tree/main/data_list
 DATA_VERSION_CLEAN=$(basename "$DATA_VERSION" .yaml)
 
 VISION_MODEL_VERSION="google/siglip-so400m-patch14-384"

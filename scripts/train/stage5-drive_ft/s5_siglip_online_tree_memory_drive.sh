@@ -12,20 +12,17 @@ export NCCL_P2P_LEVEL=NVL
 # export NCCL_DEBUG="INFO"
 mkdir -p $TRITON_CACHE_DIR
 
-############### Pretrain ################
+############### Online SFT ################
 VISION_MODEL_VERSION="google/siglip-so400m-patch14-384"
 VISION_MODEL_VERSION_CLEAN=$(basename "$VISION_MODEL_VERSION")
 
 LLM_VERSION="MCG-NJU/StreamForest-Qwen2-7B"     #Ours hf_weight or your stage4 ckpt
 LLM_VERSION_CLEAN=$(basename "$LLM_VERSION")
 
-# DATA_VERSION="anno/data_list/stage5_drive_sft.yaml"
-DATA_VERSION="anno/data_list/local/stage5_drive_sft.yaml"
+DATA_VERSION="anno/data_list/stage5_drive_sft.yaml"     #Download from https://huggingface.co/datasets/MCG-NJU/StreamForest-Annodata/tree/main/data_list
 DATA_VERSION_CLEAN=$(basename "$DATA_VERSION" .yaml)
 
-# TUNABLE_PARTS="mm_vision_tower,mm_mlp_adapter,mm_language_model"
 TUNABLE_PARTS="mm_mlp_adapter,mm_language_model"
-# TUNABLE_PARTS="mm_mlp_adapter"
 
 mm_projector_type=tome729_fstw_pemf
 

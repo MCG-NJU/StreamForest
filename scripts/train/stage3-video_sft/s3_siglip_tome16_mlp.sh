@@ -12,8 +12,8 @@ export NCCL_P2P_LEVEL=NVL
 # export NCCL_DEBUG="INFO"
 mkdir -p $TRITON_CACHE_DIR
 
-############### Pretrain ################
-DATA_VERSION="anno/data_list/stage3_short-long_mix_sft.yaml"
+############### Offline PT ################
+DATA_VERSION="anno/data_list/stage3_short-long_mix_sft.yaml"    #Download from https://huggingface.co/datasets/MCG-NJU/StreamForest-Annodata/tree/main/data_list
 DATA_VERSION_CLEAN=$(basename "$DATA_VERSION" .yaml)
 
 VISION_MODEL_VERSION="google/siglip-so400m-patch14-384"
