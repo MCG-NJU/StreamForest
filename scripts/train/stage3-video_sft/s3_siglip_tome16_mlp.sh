@@ -19,7 +19,7 @@ DATA_VERSION_CLEAN=$(basename "$DATA_VERSION" .yaml)
 VISION_MODEL_VERSION="google/siglip-so400m-patch14-384"
 VISION_MODEL_VERSION_CLEAN=$(basename "$VISION_MODEL_VERSION")
 
-LLM_VERSION="ckpt/StreamForest-Qwen2-7B_Siglip"
+LLM_VERSION="ckpt/stage2-visual_pretraining/path_of_your_stage2_ckpt_here"  #your stage2 ckpt
 LLM_VERSION_CLEAN=$(basename "$LLM_VERSION")
 
 mm_projector_type=tome16_mlp

@@ -16,7 +16,7 @@ mkdir -p $TRITON_CACHE_DIR
 VISION_MODEL_VERSION="google/siglip-so400m-patch14-384"
 VISION_MODEL_VERSION_CLEAN=$(basename "$VISION_MODEL_VERSION")
 
-LLM_VERSION="/your_local_path_to/VideoChat-Flash-Qwen2-7B_Siglip"
+LLM_VERSION="MCG-NJU/StreamForest-Pretrain-Qwen2-7B"    #Ours hf_weight or your stage3 ckpt
 LLM_VERSION_CLEAN=$(basename "$LLM_VERSION")
 
 # DATA_VERSION="anno/data_list/stage4_online_sft.yaml"

@@ -19,7 +19,7 @@ VISION_MODEL_VERSION_CLEAN=$(basename "$VISION_MODEL_VERSION")
 LLM_VERSION="Qwen/Qwen2-7B-Instruct"
 LLM_VERSION_CLEAN=Qwen2-7B-Instruct
 
-PROJECTOR_PATH="ckpt/stage1-init_connector/stage1-siglip-so400m-patch14-384-Qwen2-7B-Instruct-tome64_mlp-pretrain_sft_4debug.yaml_plain_20250812_222825/mm_projector.bin"
+PROJECTOR_PATH="ckpt/stage1-init_connector/path_of_your_stage1_ckpt_here/mm_projector.bin"  #your stage1 ckpt
 
 mm_projector_type=tome64_mlp
 
