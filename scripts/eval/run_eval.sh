@@ -5,8 +5,8 @@ export PYTHONPATH=$STREAMFOREST_ROOT_PATH
 MAX_FRAMES=2048
 TIME_MSG=short_online_v2
 MODEL_NAME=streamforest
-CKPT_PATH=ckpt/StreamForest-Qwen2-7B_Siglip
-# CKPT_PATH=ckpt/StreamForest-Qwen2-7B_Siglip_drive
+CKPT_PATH=MCG-NJU/StreamForest-Qwen2-7B             #Our hf_weights or your ckpt path here
+# CKPT_PATH=MCG-NJU/StreamForest-Drive-Qwen2-7B       #Our hf_weights or your ckpt path here
 
 TASKS=(
     "odvbench"
