@@ -75,8 +75,9 @@ We employ lmms-eval for model evaluation.
 
 #### Preparatory Steps
 
-- Environment Setup: Ensure that all dependencies required by [lmms_eval](https://github.com/EvolvingLMMs-Lab/lmms-eval) are properly installed.
+- Preparation of the test set JSON: Download the dataset from [StreamForest-Annodata](https://huggingface.co/datasets/Lanxingxuan/StreamForest-Annodata) and place it under the `./anno` directory.
 
+- Preparation of the test set videos: Please check the `utils.py` file under each test task in `./lmms_eval/tasks`. Some tasks include a `DATA_LIST` entry, which means you’ll need to manually specify the directory where your local test videos are stored.
 
 #### Evaluating StreamForest
 
