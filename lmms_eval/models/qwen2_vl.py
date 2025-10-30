@@ -16,8 +16,12 @@ from lmms_eval.api.instance import Instance
 from lmms_eval.api.model import lmms
 from lmms_eval.api.registry import register_model
 # from lmms_eval.models.model_utils.load_video import load_video_decord
-from petrel_client.client import Client
-client = Client('~/petreloss.conf')
+try:
+    from petrel_client.client import Client
+    client = Client('~/petreloss.conf')
+except Exception as e:
+    print(f"Failed to initialize Petrel Client: {e}")
+    client = None
 
 
 try:

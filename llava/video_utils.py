@@ -440,8 +440,12 @@ VIDEO_READER_FUNCS = {
 
 
 if __name__ =="__main__":
-    from petrel_client.client import Client
-    client = Client('~/petreloss.conf')
+    try:
+        from petrel_client.client import Client
+        client = Client('~/petreloss.conf')
+    except Exception as e:
+        print(f"Failed to initialize Petrel Client: {e}")
+        client = None
     
     
     # video_path = "p2:s3://tgif/tumblr_nob0jkWpiI1t95h1uo1_250.gif"

@@ -19,8 +19,12 @@ from torchvision import io, transforms
 from torchvision.transforms import InterpolationMode
 from typing import Optional
 
-from petrel_client.client import Client
-client = Client('~/petreloss.conf')
+try:
+    from petrel_client.client import Client
+    client = Client('~/petreloss.conf')
+except Exception as e:
+    print(f"Failed to initialize Petrel Client: {e}")
+    client = None
 
 logger = logging.getLogger(__name__)
 

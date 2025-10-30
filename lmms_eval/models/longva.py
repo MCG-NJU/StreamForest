@@ -29,8 +29,12 @@ from lmms_eval.api.model import lmms
 from lmms_eval.api.registry import register_model
 from lmms_eval.models.model_utils.load_video import read_video_pyav
 
-from petrel_client.client import Client
-client = Client('~/petreloss.conf')
+try:
+    from petrel_client.client import Client
+    client = Client('~/petreloss.conf')
+except Exception as e:
+    print(f"Failed to initialize Petrel Client: {e}")
+    client = None
 
 try:
     from longva.constants import (

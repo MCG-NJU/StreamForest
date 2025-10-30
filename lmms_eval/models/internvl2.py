@@ -12,8 +12,12 @@ from accelerate import Accelerator, DistributedType
 from lmms_eval.api.model import lmms
 from tqdm import tqdm
 import logging
-from petrel_client.client import Client
-client = Client('~/petreloss.conf')
+try:
+    from petrel_client.client import Client
+    client = Client('~/petreloss.conf')
+except Exception as e:
+    print(f"Failed to initialize Petrel Client: {e}")
+    client = None
 eval_logger = logging.getLogger("eval_logger")
 
 IMAGENET_MEAN = (0.485, 0.456, 0.406)

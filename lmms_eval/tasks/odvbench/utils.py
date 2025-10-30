@@ -13,9 +13,12 @@ import numpy as np
 from loguru import logger as eval_logger
 
 import io
-from petrel_client.client import Client
-
-client = Client('~/petreloss.conf')
+try:
+    from petrel_client.client import Client
+    client = Client('~/petreloss.conf')
+except Exception as e:
+    print(f"Failed to initialize Petrel Client: {e}")
+    client = None
 
 DATA_LIST = {
     "targeting_single_static_objects_v4": "pnorm2:s3://OMQA-DS-ALL/",

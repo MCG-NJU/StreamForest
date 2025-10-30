@@ -25,8 +25,12 @@ from lmms_eval.api.model import lmms
 from lmms_eval.api.registry import register_model
 
 import io
-from petrel_client.client import Client
-client = Client('~/petreloss.conf')
+try:
+    from petrel_client.client import Client
+    client = Client('~/petreloss.conf')
+except Exception as e:
+    print(f"Failed to initialize Petrel Client: {e}")
+    client = None
 
 # Suppress warnings
 warnings.filterwarnings("ignore")

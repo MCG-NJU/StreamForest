@@ -9,8 +9,12 @@ from accelerate import Accelerator, DistributedType
 from accelerate.state import AcceleratorState
 from typing import List, Optional, Union, Tuple
 from transformers import AutoModel, AutoTokenizer
-from petrel_client.client import Client
-client = Client('~/petreloss.conf')
+try:
+    from petrel_client.client import Client
+    client = Client('~/petreloss.conf')
+except Exception as e:
+    print(f"Failed to initialize Petrel Client: {e}")
+    client = None
 
 import warnings
 
