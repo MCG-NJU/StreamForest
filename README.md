@@ -7,7 +7,7 @@
 </div>
 
 <p align="center">
-        🤗 <a href="https://huggingface.co/collections/MCG-NJU/streamforest-and-odvbench-68da5d8a88f3cf453bca0e09">Model & Data</a> &nbsp&nbsp ｜ &nbsp&nbsp🖥️ <a href="">Demo</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/pdf/2509.24871">Paper</a> &nbsp&nbsp | &nbsp&nbsp 🌐 <a href="">Blog</a>
+        🤗 <a href="https://huggingface.co/collections/MCG-NJU/streamforest-and-odvbench-68da5d8a88f3cf453bca0e09">Model & Data</a> &nbsp&nbsp ｜ &nbsp&nbsp🖥️ <a href="">Demo</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/pdf/2509.24871">Paper</a> &nbsp&nbsp | &nbsp&nbsp 🌐 <a href="https://happyzqy.github.io/StreamForest/">Homepage</a>
 <br>
 
 </p>
